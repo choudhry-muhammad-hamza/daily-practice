@@ -1,0 +1,78 @@
+# Toggle Button - February 02
+
+A simple toggle button created using **HTML** and **CSS**.
+
+## Demo
+
+The toggle button has a smooth sliding animation:
+
+- **Off state:** Dark background
+- **On state:** Blue background with slider moving.
+
+## HTML
+
+```html
+<label class="toggle">
+  <input type="checkbox" />
+  <span class="slider"></span>
+</label>
+```
+
+## CSS
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.toggle {
+  position: relative;
+  width: 90px;
+  height: 44px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: #2a2f36;
+  border-radius: 44px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle input:checked + .slider {
+  background-color: #4174fa;
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(46px);
+}
+```

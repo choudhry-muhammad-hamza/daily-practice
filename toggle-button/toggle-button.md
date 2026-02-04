@@ -1,4 +1,4 @@
-# Toggle Button - February 02
+# Toggle Button
 
 A simple Toggle Button with Smoky rainbow cursor created using **HTML** , **CSS** and **JavaScript**.
 

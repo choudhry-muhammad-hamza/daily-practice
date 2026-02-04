@@ -127,7 +127,7 @@ body {
 
 ## JavaScript
 
-```
+```js
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   let hue = 0; // Starting hue for rainbow effect

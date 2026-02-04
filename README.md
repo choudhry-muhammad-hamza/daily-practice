@@ -6,4 +6,4 @@ Daily hands-on practice of web development and programming fundamentals.
 
 A simple Toggle Button with Smoky rainbow cursor created using **HTML** , **CSS** and **JavaScript**.
 
-[View Project Details →](february-02/toggle-button.md)
+[View Project Details →](toggle-button/toggle-button.md)

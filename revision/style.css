@@ -1,0 +1,8 @@
+#one {
+  font-family: "arial", Courier, monospace;
+  font-size: 250px;
+}
+p {
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,8 +1,41 @@
-div {
-  background-color: aqua;
-  display: inline;
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
+
+#navbar {
+  background-color: #0f1111;
+  height: 60px;
+}
+
 button {
-  display: block;
-  background-color: blue;
+  background-color: #f08804;
+}
+
+.logo {
+  color: #f08804;
+  font-size: 25px;
+}
+
+a {
+  margin-right: 200px;
+  text-decoration: none;
+}
+
+.contentBox {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+footer {
+  background-color: #0f1111;
+  color: white;
+  text-align: center;
+}
+
+#content {
+  height: 720px;
 }

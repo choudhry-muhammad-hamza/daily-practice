@@ -35,3 +35,7 @@ footer {
   color: white;
   text-align: center;
 }
+
+#content {
+  height: 720px;
+}

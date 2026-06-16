@@ -10,14 +10,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/bootstrap-practice/style.css" />
+    <link rel="stylesheet" href="/bootstrap/style.css" />
   </head>
   <body>
-    <div class="container" id="red">
-      <div class="row" id="green">
-        <div class="col-lg-4 bg-success text-white">First</div>
-        <div class="col-lg-4 bg-danger text-white">Second</div>
-        <div class="col-lg-4 bg-primary text-white">Three</div>
+    <div class="container-fluid">
+      <div class="row bg-warning" style="min-height: 200px">
+        <div class="col-4 bg-primary text-white">div one</div>
+        <div class="col-4 bg-danger text-white order-lg-3">div two</div>
+        <div class="col-4 bg-info text-white order-lg-1">div three</div>
       </div>
     </div>
 

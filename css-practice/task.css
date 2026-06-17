@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  width: 250px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  /* Animation on load */
+  animation: fadeUp 1s ease;
+
+  /* Transition */
+  transition: all 0.3s ease;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* TEXT */
+.card h2 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: green;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  margin-top: auto;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  /* pulse animation */
+  animation: pulse 2s infinite;
+}
+
+/* HOVER EFFECTS */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card button:hover {
+  background: green;
+  transform: scale(1.05);
+}
+
+/* KEYFRAME 1: Load Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* KEYFRAME 2: Button Pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}

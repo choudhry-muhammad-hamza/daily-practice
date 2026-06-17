@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+div {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  /* animation-name: colorAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; */
+  animation: colorAnimate 2s ease-in 0s infinite normal;
+}
+@keyframes colorAnimate {
+  from {
+    transform: rotate(0deg);
+    background-color: aqua;
+    border: 50px dashed black;
+    border-radius: 50%;
+  }
+  to {
+    transform: rotate(360deg);
+    /* background-color: blue; */
+    border: 50px dashed rgb(0, 255, 85);
+    border-radius: 75%;
+    background: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+}
+div:hover {
+  animation-play-state: paused;
+}
+nav {
+  transform: translateY(-100%);
+  animation: slideDown 1s forwards;
+  background-color: blue;
+  height: 50px;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: green;
+
+  animation: mix 2s infinite;
+}
+
+@keyframes mix {
+  0% {
+    transform: scale(1) rotate(0deg);
+    background: green;
+  }
+
+  50% {
+    transform: scale(1.3) rotate(180deg);
+    background: orange;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    background: red;
+  }
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background: purple;
+
+  animation: moveBox 3s infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(100px, 0);
+  }
+
+  50% {
+    transform: translate(100px, 100px);
+  }
+
+  75% {
+    transform: translate(0, 100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.box:hover {
+  animation-play-state: paused;
+}

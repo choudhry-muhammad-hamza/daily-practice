@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  /* animation-name: colorAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; */
+  animation: rotate 2s ease-in-out 0.1s infinite reverse;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    background-color: blue;
+    border: 10px solid rgb(39, 255, 15);
+    border-radius: 50%;
+    text-align: center;
+  }
+  50% {
+    transform: scale(2);
+    background-color: rgb(225, 0, 255);
+    border: 20px dashed rgb(69, 52, 52);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: chartreuse;
+    border: 20px dashed rgb(255, 0, 0);
+    border-radius: 75%;
+  }
+}
+div:hover {
+  background-color: black;
+  color: white;
+  animation-play-state: paused;
+}

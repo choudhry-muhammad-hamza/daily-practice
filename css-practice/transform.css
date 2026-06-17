@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  background-color: rgb(103, 247, 235);
+  color: black;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  font-weight: 300;
+  position: relative;
+  top: 150px;
+  left: 150px;
+  transform: rotatex(180deg);
+  rotate: Y 210deg;
+  transition: all 1s ease-in;
+}
+div:hover {
+  transform: rotate(110deg);
+  transform: translate(100px, 40px);
+  transform: scale(1, 2);
+  transform: rotate(90deg);
+  transform: skew(45deg);
+  background-color: rgb(34, 255, 0);
+  color: rgb(255, 255, 255);
+  height: 350px;
+  width: 350px;
+}

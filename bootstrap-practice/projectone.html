@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Project one</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/bootstrap-practice/projectone.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,6 +88,207 @@
       </div>
     </nav>
 
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1562813733-b31f71025d54?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+            id="image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Web Developement</h5>
+            <p>
+              Creating responsive, modern websites with clean code and great
+              user experience.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nJTIwZGFyayUyMGltYWdlfGVufDB8fDB8fHww"
+            class="d-block w-100"
+            alt="..."
+            id="image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>App Developement</h5>
+            <p>
+              Building innovative mobile applications with smooth performance
+              and user-friendly interfaces.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1685210129009-501c75e96183?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNlbyUyMGJsYWNrJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"
+            class="d-block w-100"
+            alt="..."
+            id="image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SEO</h5>
+            <p>
+              Optimizing websites to improve search rankings, traffic, and
+              visibility.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- container -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="display-6 text-center mt-5 mb-2">
+            We create clean, fast, and responsive digital products. <br />
+            Turning ideas into reality.
+          </h3>
+        </div>
+      </div>
+      <!-- features -->
+      <div class="row justify-content-evenly pt-3 pb-3">
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-code-square text-primary"></i></h1>
+          <h5>Web Developement</h5>
+          <p>
+            Modern web development focuses on speed, performance, and mobile
+            responsiveness.
+          </p>
+        </div>
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-easel-fill text-danger"></i></h1>
+          <h5>App Developement</h5>
+          <p>
+            Modern app development delivers smooth performance and great user
+            experience.
+          </p>
+        </div>
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-calendar-range text-success"></i></h1>
+          <h5>SEO</h5>
+          <p>SEO focuses on keywords, content, and website optimization.</p>
+        </div>
+      </div>
+      <!-- line -->
+      <hr />
+      <!-- growth -->
+      <div class="row justify-content-evenly pt-3 pb-5">
+        <div class="col-md-5 pt-3">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682309580199-12b830e35008?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3Jvd3RofGVufDB8fDB8fHww"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-5 pt-3">
+          <h5 class="mt-3">Website Developement</h5>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-success" style="width: 97%"></div>
+          </div>
+          <h5 class="mt-3">App Developement</h5>
+
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-info" style="width: 88%"></div>
+          </div>
+          <h5 class="mt-3">Software Developement</h5>
+
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Warning example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-warning" style="width: 100%"></div>
+          </div>
+          <h5 class="mt-3">SEO</h5>
+
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-danger" style="width: 80%"></div>
+          </div>
+          <h5 class="mt-3">Marketing</h5>
+
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 95%"></div>
+          </div>
+        </div>
+      </div>
+      <!-- container end -->
+    </div>
+
+    <!-- link bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

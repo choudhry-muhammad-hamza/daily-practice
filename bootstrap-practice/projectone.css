@@ -1,0 +1,8 @@
+.navbar-dark .nav-item .nav-link {
+  color: rgb(255, 255, 255) !important ;
+  font-size: 400;
+}
+#image {
+  height: 530px;
+  object-fit: cover;
+}

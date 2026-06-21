@@ -18,5 +18,5 @@
 // let x = null;
 // console.log(x);
 
-let ourPlanet = "Earth";
+let ourPlanetName = "Earth";
 let currentVisitor = "muhammad hamza";

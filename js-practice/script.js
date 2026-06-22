@@ -18,5 +18,19 @@
 // let x = null;
 // console.log(x);
 
-let ourPlanetName = "Earth";
-let currentVisitor = "muhammad hamza";
+// let ourPlanetName = "Earth";
+// let currentVisitor = "muhammad hamza";
+// console.log(ourPlanetName);
+
+{
+  let a = 5;
+  console.log(a);
+}
+{
+  let a = 10;
+  a = 15;
+  console.log(a);
+}
+let a = BigInt(12345);
+console.log(typeof a);
+console.log(a);

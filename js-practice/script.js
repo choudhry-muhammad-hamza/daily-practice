@@ -50,18 +50,29 @@
 // student.name = "Muhammad Hamza";
 // console.log(student.name);
 
-const product = {
-  name: "Pen ",
-  rating: 4,
-  offer: 5,
-  price: 250,
-};
-console.log(product);
-const profile = {
-  userName: "Muhammad Hamza",
-  isFollow: true,
-  followers: 234,
-  following: 3435,
-};
-console.log(profile);
-console.log(typeof profile.isFollow);
+// const product = {
+//   name: "Pen ",
+//   rating: 4,
+//   offer: 5,
+//   price: 250,
+// };
+// console.log(product);
+// const profile = {
+//   userName: "Muhammad Hamza",
+//   isFollow: true,
+//   followers: 234,
+//   following: 3435,
+// };
+// console.log(profile);
+// console.log(typeof profile.isFollow);
+
+// let name = prompt("Enter your name");
+// console.log(name);
+// let num1 = Number(prompt());
+// let num2 = Number(prompt());
+// console.log(num1 + num2);
+
+let num = prompt("enter a number:");
+if (num == 5 || num == 3 || num == 1) {
+  console.log("You are right");
+}

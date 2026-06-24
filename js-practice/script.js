@@ -72,7 +72,25 @@
 // let num2 = Number(prompt());
 // console.log(num1 + num2);
 
-let num = prompt("enter a number:");
-if (num == 5 || num == 3 || num == 1) {
-  console.log("You are right");
+// let num = prompt("enter a number:");
+// if (num == 5 || num == 3 || num == 1) {
+//   console.log("You are right");
+// }
+// let age = prompt("enter your age");
+// age = Number(age);
+// if (age === 18) {
+//   console.log("elligible for vote");
+// } else {
+//   console.log("not eligible");
+// }
+// console.log(age);
+
+let num = prompt("enter a number");
+num = Number(num);
+if (isNaN(num)) {
+  console.log("not a number");
+} else if (num % 2 === 0) {
+  console.log("number is even");
+} else {
+  console.log("number is odd");
 }

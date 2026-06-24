@@ -22,15 +22,46 @@
 // let currentVisitor = "muhammad hamza";
 // console.log(ourPlanetName);
 
-{
-  let a = 5;
-  console.log(a);
-}
-{
-  let a = 10;
-  a = 15;
-  console.log(a);
-}
-let a = BigInt(12345);
-console.log(typeof a);
-console.log(a);
+// {
+//   let a = 5;
+//   console.log(a);
+// }
+// {
+//   let a = 10;
+//   a = 15;
+//   console.log(a);
+// }
+// let a = BigInt(12345);
+// console.log(typeof a);
+// console.log(a);
+// const student = {
+//   name: "hamza",
+//   age: 25,
+//   marks: 1037,
+//   isPass: true,
+// };
+// console.log(student);
+// console.log(typeof student);
+// console.log(student["age"]);
+// console.log(student["isPass"]);
+// console.log(student.marks);
+// student.age = student.age + 1;
+// console.log(student.age);
+// student.name = "Muhammad Hamza";
+// console.log(student.name);
+
+const product = {
+  name: "Pen ",
+  rating: 4,
+  offer: 5,
+  price: 250,
+};
+console.log(product);
+const profile = {
+  userName: "Muhammad Hamza",
+  isFollow: true,
+  followers: 234,
+  following: 3435,
+};
+console.log(profile);
+console.log(typeof profile.isFollow);

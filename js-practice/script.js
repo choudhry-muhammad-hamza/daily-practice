@@ -85,12 +85,17 @@
 // }
 // console.log(age);
 
-let num = prompt("enter a number");
-num = Number(num);
-if (isNaN(num)) {
-  console.log("not a number");
-} else if (num % 2 === 0) {
-  console.log("number is even");
-} else {
-  console.log("number is odd");
-}
+// let num = prompt("enter a number");
+// num = Number(num);
+// if (isNaN(num)) {
+//   console.log("not a number");
+// } else if (num % 2 === 0) {
+//   console.log("number is even");
+// } else {
+//   console.log("number is odd");
+// }
+let age = 18;
+age >= 18
+  ? console.log("eligible for vote")
+  : console.log("not eligible for vote");
+console.log(age);

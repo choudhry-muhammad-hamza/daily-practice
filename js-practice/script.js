@@ -241,3 +241,12 @@
 //   console.log("sum is ", sum);
 //   n++;
 // } while (n <= 100);
+
+// for-of loop
+let name = "Muhammad Hamza";
+for (let i of name) {
+  console.log(i);
+}
+for (let i = 0; i < name.length; i++) {
+  console.log(name[i]);
+}

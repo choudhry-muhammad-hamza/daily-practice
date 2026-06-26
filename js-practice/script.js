@@ -319,3 +319,20 @@
 // console.log(firstName.charAt(5));
 // lastName = lastName.replace("mza", "n");
 // console.log(lastName);
+
+// // practice set
+// let fullName = prompt("Enter Your Fullname without spaces");
+// let userName = "@" + fullName + fullName.length;
+// console.log(`@${fullName}${fullName.length}`);
+// console.log(userName);
+
+// chatgpt practice questions
+
+let str = "JavaScript";
+
+console.log(str.replace("Java", "Type"));
+console.log(str.charAt(4));
+let first = "Muhammad";
+let last = "Hamza";
+
+console.log(first.concat(" ", last));

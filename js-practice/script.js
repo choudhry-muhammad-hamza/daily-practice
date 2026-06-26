@@ -252,13 +252,70 @@
 //   console.log(name[i]);
 // }
 
-// for in loop
-let student = {
-  name: "Muhammad Hamza",
-  age: 24,
-  marks: 1037,
-  isPass: true,
-};
-for (let key in student) {
-  console.log("key = ", key, "value = ", student[key]);
-}
+// // for in loop
+// let student = {
+//   name: "Muhammad Hamza",
+//   age: 24,
+//   marks: 1037,
+//   isPass: true,
+// };
+// for (let key in student) {
+//   console.log("key = ", key, "value = ", student[key]);
+// }
+
+// // print even numbers
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// // practice question 2
+// let gameNum = 30;
+// let userNum = prompt("guess the game number");
+// while (userNum != gameNum) {
+//   userNum = prompt("You entered wrong number .guess again");
+// }
+// console.log("congratulations you entered the right number ");
+
+// // templete literals practice
+// let student = {
+//   name: "Hamza",
+//   class: 12,
+//   marks: 1037,
+// };
+// let metricMarks = 1078;
+// let interMarks = 1037;
+// console.log(
+//   `my name is ${student.name}.i am in class ${student.class}.i got ${student.marks} marks in inter.collection of my marks is ${metricMarks + interMarks}.`,
+// );
+
+// // use of \n and \t
+// console.log("Muhammad \t  Hamza".length);
+
+// // use of string methods
+// let name = "Muhammad Hamza     ";
+// let updatedName = name.toUpperCase();
+// console.log(name);
+// console.log(updatedName);
+// console.log(name.toLowerCase());
+// console.log(name.trim());
+// console.log(name.slice(2, 7));
+// let firstName = "Muhammad";
+// let lastName = "Hamza";
+// console.log(firstName.concat(lastName));
+// console.log(firstName + " " + lastName);
+// // templete literals
+// console.log(`${firstName} ${lastName}`);
+// console.log(`${firstName}
+//   ${lastName}`);
+// console.log(lastName.replace("m", "n"));
+// console.log(firstName.replaceAll("m", "p"));
+// console.log(firstName.charAt(0));
+// console.log(firstName.charAt(1));
+// console.log(firstName.charAt(2));
+// console.log(firstName.charAt(3));
+// console.log(firstName.charAt(4));
+// console.log(firstName.charAt(5));
+// lastName = lastName.replace("mza", "n");
+// console.log(lastName);

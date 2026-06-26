@@ -326,13 +326,14 @@
 // console.log(`@${fullName}${fullName.length}`);
 // console.log(userName);
 
-// chatgpt practice questions
+// // chatgpt practice questions
+// let str = "JavaScript";
+// console.log(str.replace("Java", "Type"));
+// console.log(str.charAt(4));
+// let first = "Muhammad";
+// let last = "Hamza";
+// console.log(first.concat(" ", last));
 
-let str = "JavaScript";
-
-console.log(str.replace("Java", "Type"));
-console.log(str.charAt(4));
-let first = "Muhammad";
-let last = "Hamza";
-
-console.log(first.concat(" ", last));
+// array practice
+let marks = ["78", "98"];
+console.log(typeof marks);

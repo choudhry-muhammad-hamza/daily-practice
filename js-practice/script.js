@@ -242,11 +242,23 @@
 //   n++;
 // } while (n <= 100);
 
-// for-of loop
-let name = "Muhammad Hamza";
-for (let i of name) {
-  console.log(i);
-}
-for (let i = 0; i < name.length; i++) {
-  console.log(name[i]);
+// // for-of loop
+// let name = "Muhammad Hamza";
+// for (let i of name) {
+//   console.log(i);
+// }
+// // same code in for loop
+// for (let i = 0; i < name.length; i++) {
+//   console.log(name[i]);
+// }
+
+// for in loop
+let student = {
+  name: "Muhammad Hamza",
+  age: 24,
+  marks: 1037,
+  isPass: true,
+};
+for (let key in student) {
+  console.log("key = ", key, "value = ", student[key]);
 }

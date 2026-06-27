@@ -386,7 +386,7 @@
 // }
 
 // // array methods practice
-let marks = [40, 50, 60, 70, 80];
+// let marks = [40, 50, 60, 70, 80];
 // let marks1 = [40, 50, 60, 70, 80];
 // let concatMethod = marks.concat(marks1, 50);
 // console.log(concatMethod);
@@ -400,9 +400,17 @@ let marks = [40, 50, 60, 70, 80];
 // let a = marks.toString();
 // console.log(a);
 // console.log(marks);
-let marks2 = marks.unshift(30);
-console.log(marks);
-console.log(marks2);
-let marks3 = marks.shift();
-console.log(marks);
-console.log(marks3);
+// let marks2 = marks.unshift(30);
+// console.log(marks);
+// console.log(marks2);
+// let marks3 = marks.shift();
+// console.log(marks);
+// console.log(marks3);
+// let marks4 = marks.slice(1, 3);
+// console.log(marks);
+// console.log(marks4);
+// let marks5 = marks.splice(1, 2, 110, 120);
+// console.log(marks);
+// console.log(marks5);
+
+// array practice set

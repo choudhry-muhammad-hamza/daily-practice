@@ -384,3 +384,25 @@
 //   console.log(`value after discount = ${items[i]}`);
 //   console.log(items);
 // }
+
+// // array methods practice
+let marks = [40, 50, 60, 70, 80];
+// let marks1 = [40, 50, 60, 70, 80];
+// let concatMethod = marks.concat(marks1, 50);
+// console.log(concatMethod);
+// console.log(marks);
+// console.log(marks1);
+// marks.push(90);
+// console.log(marks);
+// marks.pop();
+// console.log(marks);
+// console.log(marks.toString());
+// let a = marks.toString();
+// console.log(a);
+// console.log(marks);
+let marks2 = marks.unshift(30);
+console.log(marks);
+console.log(marks2);
+let marks3 = marks.shift();
+console.log(marks);
+console.log(marks3);

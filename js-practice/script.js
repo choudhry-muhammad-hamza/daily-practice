@@ -334,6 +334,53 @@
 // let last = "Hamza";
 // console.log(first.concat(" ", last));
 
-// array practice
-let marks = ["78", "98"];
-console.log(typeof marks);
+// // array practice
+// let studentNames = ["Hamza", "Talha", "Noman", "Waleed", "Hanzla"];
+// console.log(studentNames);
+// console.log(studentNames.length);
+// console.log(
+//   studentNames[1],
+//   studentNames[0],
+//   studentNames[2],
+//   studentNames[3],
+//   studentNames[4],
+// );
+// for (let i of studentNames) {
+//   console.log(i.toLocaleLowerCase());
+// }
+// for (let i = 0; i < studentNames.length; i++) {
+//   console.log(studentNames[i]);
+// }
+// for (let i in studentNames) {
+//   console.log(studentNames[i].toUpperCase());
+// }
+
+// // Practice Set 1
+// let studentMarks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// for (let marks of studentMarks) {
+//   sum += marks;
+// }
+// let averageMarks = sum / studentMarks.length;
+// console.log(`Average marks of students is ${averageMarks}.`);
+
+// // Practice Set 2
+// let items = [250, 645, 300, 900, 50];
+// // using for of loop
+// let i = 0;
+// for (let val of items) {
+//   console.log(`value before discount = ${val}`);
+//   let offer = val / 10;
+//   items[i] = items[i] - offer;
+//   console.log(`value after discount = ${items[i]}`);
+//   i++;
+//   console.log(items);
+// }
+// // using simple for loop
+// for (let i = 0; i < items.length; i++) {
+//   console.log(`value before discount = ${items[i]}`);
+//   let offer = items[i] / 10;
+//   items[i] -= offer;
+//   console.log(`value after discount = ${items[i]}`);
+//   console.log(items);
+// }

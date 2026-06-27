@@ -413,4 +413,85 @@
 // console.log(marks);
 // console.log(marks5);
 
-// array practice set
+// // array practice set
+// let companies = ["google", "meta", "tesla", "bmw", "netflix", "indrive"];
+// let removed = companies.shift();
+// console.log(companies);
+// console.log(removed);
+// let changed = companies.splice(2, 1, "toyota");
+// console.log(companies);
+// console.log(changed);
+// let add = companies.push("Amazon");
+// console.log(add);
+// console.log(companies);
+// console.log(companies.length);
+
+// // chat gpt practice set
+// let colors = ["Red", "Blue", "Green"];
+// for (let i of colors) {
+//   console.log(i);
+// }
+// for (i = 0; i < colors.length; i++) {
+//   console.log(colors[i]);
+// }
+// let arr = [10, 20, 30];
+// let x = arr.pop();
+// console.log(x);
+// console.log(arr);
+// let arr1 = ["A", "B"];
+// arr1.unshift("Start");
+// console.log(arr1);
+// let arr2 = ["A", "B", "C"];
+// let x1 = arr2.shift();
+// console.log(x1);
+// console.log(arr2);
+// let cities = ["Lahore", "Karachi", "Islamabad"];
+// let convert = cities.toString();
+// console.log(cities);
+// console.log(convert);
+// let a = [1, 2];
+// let b = [3, 4];
+// let c = a.concat(b);
+// console.log(c);
+// let fruits = ["Apple", "Mango", "Banana", "Orange"];
+// let d = fruits.splice(1, 1, "grapes");
+// console.log(fruits);
+// let numbers = [10, 20, 30, 40];
+// let sum = 0;
+// for (let i of numbers) {
+//   sum += i;
+// }
+// console.log(sum);
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum1 = 0;
+// let average;
+// for (let i = 0; i < marks.length; i++) {
+//   sum1 += marks[i];
+//   average = sum1 / marks.length;
+// }
+// console.log(average);
+// let numbers = [25, 80, 12, 99, 45];
+// let min = numbers[0];
+// for (let i = 1; i < numbers.length; i++) {
+//   if (numbers[i] < min) {
+//     min = numbers[i];
+//   }
+// }
+// console.log(min);
+// let fruits = ["Apple", "Banana"];
+// fruits.splice(1, 0, "orange");
+// console.log(fruits);
+// let arr = [1, 2, 3];
+// let x = arr.push(4);
+// let y = arr.pop();
+// console.log(x);
+// console.log(y);
+// console.log(arr);
+// let arr = ["A", "B", "C", "D"];
+// let x = arr.slice(1, 3);
+// console.log(x);
+// console.log(arr);
+// let arr = ["A", "B", "C"];
+// let x = arr.splice(1, 1);
+// console.log(x);
+// console.log(arr);

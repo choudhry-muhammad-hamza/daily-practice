@@ -497,3 +497,8 @@
 // console.log(arr);
 
 // functions
+function showMessage() {
+  alert("Hello everyone!");
+}
+showMessage();
+showMessage();

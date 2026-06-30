@@ -501,13 +501,37 @@
 //   console.log(msg);
 // }
 // showMessage("i love programming");
-
 // function calculateSum(a, b) {
-//   s = a - b;
+//   s = a + b;
 //   console.log(a);
 //   return s;
 // }
 // let val = calculateSum(2, 8);
 // console.log(val);
 
-// arrow functions
+// // arrow functions
+// const sum = (a, b) => {
+//   console.log(5 + 9);
+
+//   return a + b;
+// };
+// let s = sum(4, 8);
+// console.log(s);
+
+// practice set
+function printVowels(str) {
+  let count = 0;
+  for (let char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  console.log(count);
+}
+printVowels("Muhammad Hamza");

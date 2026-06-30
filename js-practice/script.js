@@ -624,7 +624,7 @@
 // window.console.log("hamza");
 // window.alert("hamza");
 
-// DOM (Document Object Model)
+// // DOM (Document Object Model)
 // document.body.childNodes[1].innerText = "Dom Manipulation";
 // document.body.style.background = "green";
 // let h4 = document.getElementById("h4");
@@ -645,6 +645,15 @@
 // let elementAll = document.querySelectorAll(".heading");
 // console.log(elementAll);
 // console.dir(elementAll);
-let elementAll = document.querySelectorAll("p");
-console.log(elementAll);
-console.dir(elementAll);
+// let elementAll = document.querySelectorAll("p");
+// console.log(elementAll);
+// console.dir(elementAll);
+// console.log(document.body.lastChild);
+// let div = document.querySelector("div");
+// console.dir(div);
+// let heading = document.querySelector("h1");
+
+// DOM practice set
+let para = document.getElementById("para");
+
+console.log(para.classList);

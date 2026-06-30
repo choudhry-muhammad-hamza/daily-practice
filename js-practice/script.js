@@ -518,20 +518,103 @@
 // let s = sum(4, 8);
 // console.log(s);
 
-// practice set
-function printVowels(str) {
-  let count = 0;
-  for (let char of str) {
-    if (
-      char === "a" ||
-      char === "e" ||
-      char === "i" ||
-      char === "o" ||
-      char === "u"
-    ) {
-      count++;
-    }
-  }
-  console.log(count);
-}
-printVowels("Muhammad Hamza");
+// // practice set
+// function printVowels(str) {
+//   let count = 0;
+//   for (let char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+// printVowels("Muhammad Hamza");
+// printVowels("Muhammad ali");
+// printVowels("Muhammad noman");
+
+// // same task for arrow functions
+// let printVowels = (str) => {
+//   let count = 0;
+//   for (let char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// };
+// printVowels("Muhammad Hamza");
+// printVowels("Muhammad ali");
+// printVowels("Muhammad noman");
+
+// // for each method
+// let arr = ["lahore", "karachi", "multan"];
+// arr.forEach((val, idx, arr) => {
+//   console.log(val.toUpperCase(), idx, arr);
+// });
+
+// // practice set for each method
+// let arr = [1, 2, 3, 4, 5, 6, 7, 654, 753, 7367, 2423456];
+// arr.forEach((num, idx) => {
+//   console.log(num * num, idx);
+// });
+
+// // map method
+// let arr = [1, 2, 3, 4, 5, 6, 7, 654, 753, 7367, 2423456];
+// let newArray = arr.map((num) => {
+//   return num * num;
+// });
+// console.log(newArray);
+
+// // filter method
+// let arr = [1, 2, 3, 4, 5, 6, 7, 654, 753, 7367, 2423456];
+// let evenArray = arr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(evenArray);
+
+// // reduce method
+// let arr = [1, 2, 3, 4, 5, 6];
+// let sum = arr.reduce((pre, curr) => {
+//   return pre + curr;
+// });
+// console.log(sum);
+// let arr1 = [1, 2, 3, 4, 5, 6];
+// let largeNumber = arr1.reduce((pre, curr) => {
+//   return pre > curr ? pre : curr;
+// });
+// console.log(largeNumber);
+
+// // practice set
+// let marks = [56, 76, 86, 79, 80, 93, 48];
+// let passingMarks = marks.filter((val) => {
+//   return val > 70;
+// });
+// console.log(passingMarks);
+// let userPrompt = prompt("enter a number");
+// let arr = [];
+// for (i = 1; i <= userPrompt; i++) {
+//   arr[i - 1] = i;
+// }
+// console.log(arr);
+// let sum = arr.reduce((pre, cur) => {
+//   return pre + cur;
+// });
+// console.log(sum);
+// let pro = arr.reduce((pre, cur) => {
+//   return pre * cur;
+// });
+// console.log(pro);
+
+// window object

@@ -617,4 +617,34 @@
 // });
 // console.log(pro);
 
-// window object
+// // window object
+// // it is created by browser automatically
+// console.log(Window);
+// console.log("hello");
+// window.console.log("hamza");
+// window.alert("hamza");
+
+// DOM (Document Object Model)
+// document.body.childNodes[1].innerText = "Dom Manipulation";
+// document.body.style.background = "green";
+// let h4 = document.getElementById("h4");
+// console.log(h4);
+// console.dir(h4);
+// let heading = document.getElementsByClassName("heading");
+// console.log(heading);
+// console.dir(heading);
+// let para = document.getElementsByTagName("p");
+// console.log(para);
+// console.dir(para);
+// let element = document.querySelector("p");
+// console.log(element);
+// console.dir(element);
+// let elementAll = document.querySelectorAll("p");
+// console.log(elementAll);
+// console.dir(elementAll);
+// let elementAll = document.querySelectorAll(".heading");
+// console.log(elementAll);
+// console.dir(elementAll);
+let elementAll = document.querySelectorAll("p");
+console.log(elementAll);
+console.dir(elementAll);

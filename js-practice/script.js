@@ -496,9 +496,18 @@
 // console.log(x);
 // console.log(arr);
 
-// functions
-function showMessage() {
-  alert("Hello everyone!");
-}
-showMessage();
-showMessage();
+// // functions
+// function showMessage(msg) {
+//   console.log(msg);
+// }
+// showMessage("i love programming");
+
+// function calculateSum(a, b) {
+//   s = a - b;
+//   console.log(a);
+//   return s;
+// }
+// let val = calculateSum(2, 8);
+// console.log(val);
+
+// arrow functions

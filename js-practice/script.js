@@ -715,4 +715,73 @@
 // let para = document.querySelector("p");
 // para.classList.add("newClass");
 
-// Events
+// // Events
+// let btn1 = document.querySelector("#btn1");
+// btn1.onclick = (e) => {
+//   console.log("btn1 was clicked");
+//   let a = 1;
+//   a++;
+//   console.log(a);
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// };
+// let div = document.querySelector("div");
+// div.onmouseover = (e) => {
+//   console.log("you are inside div");
+//   let a = 24;
+//   a++;
+//   console.log(a);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// };
+
+// //Add Event listeners
+// let btn1 = document.querySelector("#btn1");
+// btn1.addEventListener("click", (e) => {
+//   console.log("btn was clicked");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// });
+// let div = document.querySelector("div");
+// div.addEventListener("mouseover", (e) => {
+//   console.log("you are inside div");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// });
+
+// // remove event listener
+// let handler = (e) => {
+//   console.log("you are inside div");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// };
+// let btn1 = document.querySelector("#btn1");
+// btn1.addEventListener("click", (e) => {
+//   console.log("btn was clicked");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// });
+// let div = document.querySelector("div");
+// div.addEventListener("mouseover", handler);
+// div.addEventListener("mouseover", handler);
+// div.addEventListener("mouseover", handler);
+// div.removeEventListener("mouseover", handler);
+
+// practice set

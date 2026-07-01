@@ -1,9 +1,6 @@
-body {
-  background-color: rgb(114, 207, 204);
-}
-.myClass {
-  color: red;
-}
-.newClass {
-  background-color: green;
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  color: blue;
 }

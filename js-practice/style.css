@@ -1,3 +1,9 @@
 body {
   background-color: rgb(114, 207, 204);
 }
+.myClass {
+  color: red;
+}
+.newClass {
+  background-color: green;
+}

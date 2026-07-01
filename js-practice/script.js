@@ -653,7 +653,66 @@
 // console.dir(div);
 // let heading = document.querySelector("h1");
 
-// DOM practice set
-let para = document.getElementById("para");
+// // class list
+// let para = document.getElementById("para");
+// console.log(para.classList);
 
-console.log(para.classList);
+// // DOM practice set
+// let h2 = document.querySelector("h2");
+// h2.innerText = h2.innerText + " " + "from Kips Academy";
+// console.log(h2);
+// let divs = document.querySelectorAll(".box");
+// console.log(divs[0]);
+// divs[0].innerText = "unique first div";
+// divs[1].innerText = "unique second div";
+// divs[2].innerText = "unique third div";
+// console.log(divs[1]);
+// console.log(divs[2]);
+// idx = 1;
+// for (let div of divs) {
+//   div.innerText = `new unique value ${idx}`;
+//   idx++;
+// }
+
+// // DOM manipulation
+// let div = document.querySelector("div");
+// console.log(div);
+// let val = div.getAttribute("id");
+// console.log(val);
+// let val1 = div.getAttribute("name");
+// console.log(val1);
+// let para = document.querySelector("p");
+// let set = console.log(para.setAttribute("class", "newClass"));
+// console.log(set);
+
+// // style
+// let div = document.querySelector("#box");
+// console.log(div.style);
+// div.style.backgroundColor = "purple";
+
+// // insert element
+// let btn = document.createElement("button");
+// btn.innerText = "click me ";
+// console.log(btn.innerText);
+// let div = document.querySelector("p");
+// div.append(btn);
+// div.prepend(btn);
+// div.before(btn);
+// div.after(btn);
+// let newHeading = document.createElement("h1");
+// newHeading.innerText = "hello hamza";
+// let body = document.querySelector("body");
+// body.prepend(newHeading);
+// let para = document.querySelector("p");
+// para.remove();
+
+// // practice set
+// let btn = document.createElement("button");
+// btn.innerText = "click me";
+// btn.style.backgroundColor = "red";
+// btn.style.color = "white";
+// document.querySelector("body").append(btn);
+// let para = document.querySelector("p");
+// para.classList.add("newClass");
+
+// Events

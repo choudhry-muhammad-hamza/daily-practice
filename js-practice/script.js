@@ -1008,15 +1008,6 @@
 // });
 
 // promises
-const getPromise = () => {
-  new Promise((resolve, reject) => {
-    console.log("i am a promise.");
-    //   resolve("success");
-    reject("some error");
-  });
-};
-console.log(promise);
-
 // function getData(dataId, getNextData) {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -1030,3 +1021,45 @@ console.log(promise);
 // }
 // let result = getData(123);
 // console.log(result);
+// const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("i am a promise.");
+//     resolve("mission successful");
+//     reject("rejected due to error");
+//   });
+// };
+// let promise = getPromise();
+// promise
+//   .then((res) => {
+//     console.log("promise fulfilled.", res);
+//   })
+//   .catch((err) => {
+//     console.log("rejected", err);
+//   });
+
+// promise chain
+function asyncFun(params) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("some data 1.");
+      //   resolve("success");
+      reject("error");
+    }, 1000);
+  });
+}
+function asyncFun2(params) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("some data 2.");
+      //   resolve("success");
+      reject("error");
+    }, 2000);
+  });
+}
+console.log("fetching data 1");
+let p1 = asyncFun();
+p1.then((res) => {
+  console.log(res);
+}).catch((err) => {
+  console.log(err);
+});

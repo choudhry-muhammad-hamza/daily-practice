@@ -921,4 +921,112 @@
 // }
 // let hamza = new Engineer("hamza");
 
-// practice set
+// // practice set
+// let DATA = "secret information";
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+//   viewData() {
+//     console.log("data = ", DATA);
+//   }
+// }
+// class Admin extends User {
+//   constructor(name, email) {
+//     super(name, email);
+//   }
+//   editData() {
+//     DATA = "edit data";
+//   }
+// }
+// let student1 = new User("hamza", "hamza@gmail.com");
+// let student2 = new User("hanzla", "hamzla@gmail.com");
+// let teacher1 = new User("ali", "ali@gmail.com");
+// let admin1 = new Admin("admin", "admin@gmail.com");
+
+// // error handling (try-catch)
+// let a = 10;
+// let b = 5;
+// console.log("a=", a);
+// console.log("b=", b);
+// console.log("a+b=", a + b);
+// try {
+//   console.log("a+b=", a + c);
+// } catch (error) {
+//   console.log(error);
+// }
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+
+// // setTimeOut
+// console.log("one");
+// console.log("two");
+// function hello() {
+//   console.log("hello");
+// }
+// setTimeout(hello, 500);
+// setTimeout(() => {
+//   console.log("muhammad");
+// }, 1000);
+// setTimeout(() => {
+//   console.log("hamza");
+// }, 1500);
+// console.log("three");
+// console.log("four");
+
+// // callback functions
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+// function calculator(a, b, sumCallBack) {
+//   sumCallBack(a, b);
+// }
+// calculator(3, 7, sum);
+
+// // callback hell
+// function getData(dataId, getNextData) {
+//   setTimeout(() => {
+//     console.log("data = ", dataId);
+//     if (getNextData) {
+//       getNextData();
+//     }
+//   }, 500);
+// }
+// getData(1, () => {
+//   console.log("getting data 2 ...");
+//   getData(2, () => {
+//     console.log("getting data 3 ...");
+//     getData(3, () => {
+//       console.log("getting data 4 ...");
+//       getData(4);
+//     });
+//   });
+// });
+
+// promises
+const getPromise = () => {
+  new Promise((resolve, reject) => {
+    console.log("i am a promise.");
+    //   resolve("success");
+    reject("some error");
+  });
+};
+console.log(promise);
+
+// function getData(dataId, getNextData) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data = ", dataId);
+//       resolve("success");
+//       if (getNextData) {
+//         getNextData();
+//       }
+//     }, 500);
+//   });
+// }
+// let result = getData(123);
+// console.log(result);

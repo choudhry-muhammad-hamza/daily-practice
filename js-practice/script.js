@@ -802,3 +802,123 @@
 // });
 
 // classes and objects
+// let student = {
+//   name: "Muhammad Hamza",
+//   marks: 1037,
+//   printmarks: function () {
+//     console.log("marks = ", this.marks);
+//   },
+// };
+// console.log(student.printmarks());
+// let arr = ["apple", "banana", "mango"];
+// console.log(typeof arr);
+// console.log(arr);
+
+// // prototypes
+// let employee = {
+//   calcTax() {
+//     console.log("tax is 10 %");
+//   },
+// };
+// const karan = {
+//   salary: 50000,
+//   calcTax() {
+//     console.log("tax is 20 %.");
+//   },
+// };
+// karan.__proto__ = employee;
+
+// classes
+// class Car {
+//   constructor(brand, mileage) {
+//     console.log("creating new object");
+//     this.brand = brand;
+//     this.mileage = mileage;
+//   }
+//   start() {
+//     console.log("start");
+//   }
+//   stop() {
+//     console.log("stop");
+//   }
+// }
+// let fortuner = new Car("fortuber", 20);
+// console.log(fortuner);
+// let lexus = new Car("lexus", 40);
+// console.log(lexus);
+
+// // inheritance
+// class Parent {
+//   hello() {
+//     console.log("hello");
+//   }
+// }
+// class Child extends Parent {}
+// let obj = new Child();
+// class Person {
+//   constructor() {
+//     this.species = "homo sapiens";
+//   }
+//   eat() {
+//     console.log("eat");
+//   }
+//   sleep() {
+//     console.log("sleep");
+//   }
+// }
+// class Engineer extends Person {
+//   work() {
+//     console.log("solve problems, build something");
+//   }
+// }
+// class Doctor extends Person {
+//   work() {
+//     console.log("Life Saver");
+//   }
+// }
+// let hamza = new Engineer();
+
+// // super keyword
+// class Person {
+//   constructor() {
+//     console.log("enter parent constructor");
+//     this.species = "homo sapiens";
+//     console.log("exit parent constructor");
+//   }
+//   eat() {
+//     console.log("eat");
+//   }
+// }
+// class Engineer extends Person {
+//   constructor(branch) {
+//     console.log("enter child constructor");
+//     super();
+//     this.branch = branch;
+//     console.log("exit child constructor");
+//   }
+//   work() {
+//     console.log("solve problems, build something");
+//   }
+// }
+// let hamza = new Engineer("software engineer");
+// class Person {
+//   constructor(name) {
+//     this.species = "homo sapiens";
+//     this.name = name;
+//   }
+//   eat() {
+//     console.log("eat");
+//   }
+// }
+// class Engineer extends Person {
+//   constructor(name) {
+//     super(name);
+//   }
+//   work() {
+//     super.eat();
+//     console.log("solve problems, build something");
+//   }
+// }
+// let hamza = new Engineer("hamza");
+
+// practice set

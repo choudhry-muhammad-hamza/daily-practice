@@ -1037,29 +1037,61 @@
 //     console.log("rejected", err);
 //   });
 
-// promise chain
-function asyncFun(params) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("some data 1.");
-      //   resolve("success");
-      reject("error");
-    }, 1000);
-  });
-}
-function asyncFun2(params) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("some data 2.");
-      //   resolve("success");
-      reject("error");
-    }, 2000);
-  });
-}
-console.log("fetching data 1");
-let p1 = asyncFun();
-p1.then((res) => {
-  console.log(res);
-}).catch((err) => {
-  console.log(err);
-});
+// // promise chain
+// function asyncFun1(params) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("some data 1.");
+//       resolve("success");
+//     }, 3000);
+//   });
+// }
+// function asyncFun2(params) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("some data 2.");
+//       resolve("success");
+//     }, 3000);
+//   });
+// }
+// console.log("fetching data 1");
+// asyncFun1().then((res) => {
+//   console.log("fetching data 2");
+//   asyncFun2().then((res) => {});
+// });
+
+// // getData problem using promise chain
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data = ", dataId);
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+// getData(1).then((res) => {
+//   console.log(res);
+//   getData(2).then((res) => {
+//     console.log(res);
+//     getData(3).then((res) => {
+//       console.log(res);
+//       getData(4).then((res) => {
+//         console.log(res);
+//       });
+//     });
+//   });
+// });
+// console.log("fetching data 1");
+// getData(1)
+//   .then((res) => {
+//     console.log("fetching data 2");
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     console.log("fetching data 3");
+//     return getData(3);
+//   })
+//   .then((res) => {
+//     console.log("fetching data 4");
+//     console.log(res);
+//   });

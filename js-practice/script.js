@@ -1095,3 +1095,94 @@
 //     console.log("fetching data 4");
 //     console.log(res);
 //   });
+
+// // async await function
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("weather data");
+//       resolve(200);
+//     }, 2000);
+//   });
+// }
+// async function getWeatherData() {
+//   await api();
+//   await api();
+//   await api();
+// }
+// getWeatherData();
+
+// // getData problem using async await function
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data = ", dataId);
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+// async function getAllData(params) {
+//   console.log("getting data 1 ...");
+//   await getData(1);
+//   console.log("getting data 2 ...");
+//   await getData(2);
+//   console.log("getting data 3 ...");
+//   await getData(3);
+//   console.log("getting data 4 ...");
+//   await getData(4);
+// }
+// getAllData();
+
+// // imediately invoked function
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data = ", dataId);
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+// (async function (params) {
+//   console.log("getting data 1 ...");
+//   await getData(1);
+//   console.log("getting data 2 ...");
+//   await getData(2);
+//   console.log("getting data 3 ...");
+//   await getData(3);
+//   console.log("getting data 4 ...");
+//   await getData(4);
+// })();
+
+// fetch api using async await
+const URL = "https://catfact.ninja/fact";
+const factPara = document.querySelector("#para");
+let btn = document.querySelector("#btn");
+const getFacts = async () => {
+  console.log("getting data .....");
+
+  let response = await fetch(URL);
+  console.log(response);
+  console.log(response.status);
+  let data = await response.json();
+  console.log(data);
+  console.log(data.length);
+  console.log(data.fact);
+  factPara.innerText = data.fact;
+};
+btn.addEventListener("click", getFacts);
+
+// // fetch api using promises
+// const URL = "https://catfact.ninja/fact";
+// let btn = document.querySelector("#btn");
+// let factPara = document.querySelector("#para");
+// function getFacts() {
+//   fetch(URL)
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       factPara.innerText = data.fact;
+//     });
+// }
+// btn.addEventListener("click", getFacts);

@@ -1169,7 +1169,7 @@ const getFacts = async () => {
   console.log(data.fact);
   factPara.innerText = data.fact;
 };
-btn.addEventListener("click", getFacts);
+// btn.addEventListener("click", getFacts);
 
 // // fetch api using promises
 // const URL = "https://catfact.ninja/fact";

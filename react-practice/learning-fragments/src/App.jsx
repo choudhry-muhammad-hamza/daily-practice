@@ -3,7 +3,15 @@ import ErrorMessage from "./components/ErrorMessage";
 import "./App.css";
 
 function App() {
-  let fruitItems = ["Apple", "Banana", "Mango", "Peach", "Guava", "lechi"];
+  let fruitItems = [
+    "Apple",
+    "Banana",
+    "Mango",
+    "Peach",
+    "Guava",
+    "Lechi",
+    "Pineapple",
+  ];
 
   return (
     <>

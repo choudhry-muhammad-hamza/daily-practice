@@ -7,25 +7,35 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  let fruitItems = [
-    "Apple",
-    "Banana",
-    "Mango",
-    "Peach",
-    "Guava",
-    "Lechi",
-    "Pineapple",
-  ];
+  // let fruitItems = [
+  //   "Apple",
+  //   "Banana",
+  //   "Mango",
+  //   "Peach",
+  //   "Guava",
+  //   "Lechi",
+  //   "Pineapple",
+  // ];
 
-  let textStateArr = useState("food item entered by user");
-  let textToShow = textStateArr[0];
-  let setTextState = textStateArr[1];
-  console.log(`current value of state : ${textToShow}`);
-  console.log(`current value of state : ${setTextState}`);
+  let [textToShow, setTextState] = useState("");
+  let [fruitItems, setFoodItems] = useState([]);
 
   const handleOnChange = (event) => {
-    console.log(event.target.value);
-    setTextState(event.target.value);
+    const value = event.target.value;
+    setTextState(value);
+    console.log("Typing :", value);
+  };
+
+  const onKeyDown = (event) => {
+    if (event.key === "Enter") {
+      let newFoodItem = textToShow;
+      if (newFoodItem.trim() !== "") {
+        let newItems = [...fruitItems, newFoodItem];
+        setFoodItems(newItems);
+        console.log("Added :", newFoodItem);
+        setTextState("");
+      }
+    }
   };
 
   return (
@@ -33,9 +43,12 @@ function App() {
       <Container>
         <h1 className={styles.heading}>Healthy Fruits</h1>
         <ErrorMessage fruitItems={fruitItems} />
-        <FoodInput handleOnChange={handleOnChange}></FoodInput>
-        <p>{textToShow}</p>
-
+        <FoodInput
+          handleKeyDown={onKeyDown}
+          onChange={handleOnChange}
+          value={textToShow}
+        ></FoodInput>
+        <p className="p">{textToShow}</p>
         <FruitItems fruitItems={fruitItems} />
       </Container>
       {/* <Container>

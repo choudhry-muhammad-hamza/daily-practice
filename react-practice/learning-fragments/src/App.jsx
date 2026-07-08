@@ -20,7 +20,7 @@ function App() {
   // ];
 
   let [textToShow, setTextState] = useState("");
-  let [fruitItems, setFoodItems] = useState([]);
+  let [fruitItems, setFoodItems] = useState(["Apple"]);
 
   const handleOnChange = (event) => {
     const value = event.target.value;

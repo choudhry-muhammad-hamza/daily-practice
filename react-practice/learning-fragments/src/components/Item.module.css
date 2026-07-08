@@ -4,7 +4,8 @@
   border: 2px dotted rgb(255, 47, 127);
 }
 .kg-span {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 .heading {
   color: rgb(0, 0, 255);

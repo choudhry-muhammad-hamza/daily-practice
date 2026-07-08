@@ -5,6 +5,8 @@ import Container from "./components/Container";
 import styles from "./components/Item.module.css";
 import { useState } from "react";
 import "./App.css";
+import { SiBuymeacoffee } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 
 function App() {
   // let fruitItems = [
@@ -50,6 +52,8 @@ function App() {
         ></FoodInput>
         <p className="p">{textToShow}</p>
         <FruitItems fruitItems={fruitItems} />
+        <SiBuymeacoffee />
+        <FaLinkedin />
       </Container>
       {/* <Container>
         <p>

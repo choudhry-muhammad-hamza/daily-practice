@@ -7,6 +7,7 @@ import { useState } from "react";
 import "./App.css";
 import { SiBuymeacoffee } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { CiFacebook } from "react-icons/ci";
 
 function App() {
   // let fruitItems = [
@@ -55,6 +56,7 @@ function App() {
         <SiBuymeacoffee />
         <FaLinkedin />
       </Container>
+      <CiFacebook />
       {/* <Container>
         <p>
           Above is the list of healthy foods that are good for your health aand

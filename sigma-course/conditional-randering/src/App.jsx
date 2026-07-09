@@ -1,12 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [showbtn, setshowbtn] = useState(false);
+  const [todo, settodo] = useState([
+    { title: "hey", desc: "i am a good todo." },
+    { title: "hey another todo", desc: "i am a good todo too." },
+    { title: "hey hamza", desc: "i am a good student." },
+  ]);
 
+  // const Todo = ({ todo }) => {
+  //   return (
+  //     <div className="card m-3 p-3 border-primary shadow-sm">
+  //       <div className="card-body">
+  //         <h5 className="card-title text-primary">{todo.title}</h5>
+  //         <p className="card-text text-secondary">{todo.desc}</p>
+  //       </div>
+  //     </div>
+  //   );
+  // };
   return (
     <>
       <section id="center">
@@ -17,6 +35,25 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <br />
+          {showbtn ? (
+            <button>showbtn is true.</button>
+          ) : (
+            <button>showbtn is false.</button>
+          )}
+          <br />
+          {showbtn && <button>showbtn is true.</button>}
+          {todo.map((todo) => {
+            // return <Todo key={todo.title} todo={todo} />;
+            return (
+              <div className="card m-3 p-3 border-primary shadow-sm">
+                <div className="card-body">
+                  <h5 className="card-title text-primary">{todo.title}</h5>
+                  <p className="card-text text-secondary">{todo.desc}</p>
+                </div>
+              </div>
+            );
+          })}
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -24,9 +61,9 @@ function App() {
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => setshowbtn(!showbtn)}
         >
-          Count is {count}
+          Toggle showbtn
         </button>
       </section>
 
@@ -116,7 +153,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

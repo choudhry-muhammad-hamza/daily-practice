@@ -1,17 +1,11 @@
-import { useState, useEffect, useRef } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-import "./App.css";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const btnRef = useRef(0);
-  useEffect(() => {
-    console.log(`first rerendering .....`);
-    btnRef.current.style.backgroundColor = "red";
-  }, []);
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -28,20 +22,11 @@ function App() {
           </p>
         </div>
         <button
-          ref={btnRef}
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
-        <button
-          className="btn btn-primary"
-          onClick={() => {
-            btnRef.current.style.display = "none";
-          }}
-        >
-          Change me
         </button>
       </section>
 
@@ -131,7 +116,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

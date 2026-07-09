@@ -7,11 +7,11 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  const btnRef = useRef(0);
+  let a = useRef(0);
   useEffect(() => {
-    console.log(`first rerendering .....`);
-    btnRef.current.style.backgroundColor = "red";
-  }, []);
+    a.current += 1;
+    console.log(`rerendering and the value of a is ${a.current}`);
+  });
 
   return (
     <>
@@ -28,20 +28,11 @@ function App() {
           </p>
         </div>
         <button
-          ref={btnRef}
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
-        <button
-          className="btn btn-primary"
-          onClick={() => {
-            btnRef.current.style.display = "none";
-          }}
-        >
-          Change me
         </button>
       </section>
 

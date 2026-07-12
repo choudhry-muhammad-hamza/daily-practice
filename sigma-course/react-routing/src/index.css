@@ -11,10 +11,6 @@
   padding-top: 30px;
 }
 
-.red {
-  font-weight: 600;
-}
-
 .navbar {
   display: flex;
   justify-content: space-evenly;

@@ -2,7 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 const User = () => {
-  return <div>User Page. {username}</div>;
+  const params = useParams();
+  return <div className="text">User Page. {params.username}</div>;
 };
 
 export default User;

@@ -1,10 +1,10 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import About from "./components/About";
-import User from "./components/About";
+import User from "./components/User";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,7 +40,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <User username="hamza" />
+          <User />
         </>
       ),
     },

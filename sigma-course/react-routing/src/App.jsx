@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import About from "./components/About";
 import User from "./components/User";
+import Contact from "./components/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,15 @@ function App() {
       ),
     },
     {
+      path: "/contact",
+      element: (
+        <>
+          <Navbar />
+          <Contact />
+        </>
+      ),
+    },
+    {
       path: "/user/:username",
       element: (
         <>
@@ -48,8 +58,6 @@ function App() {
 
   return (
     <>
-      {/* <div>Hello! Myself Muhammad Hamza.</div> */}
-
       <RouterProvider router={router} />
     </>
   );

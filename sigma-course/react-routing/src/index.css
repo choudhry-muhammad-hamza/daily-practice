@@ -5,10 +5,9 @@
 
 .text {
   text-align: center;
-  color: rgb(0, 0, 255);
-  background-color: aquamarine;
-  height: 50px;
-  padding-top: 30px;
+  background-color: rgb(214, 208, 208);
+  height: 120px;
+  padding: 60px;
 }
 
 .navbar {
@@ -31,4 +30,22 @@
 
 .nav-link.active {
   color: red;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+input {
+  height: 20px;
+  padding-left: 2px;
+  border: 2px solid black;
 }

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <counterContext.Provider value={count}>
+      <counterContext.Provider value={{ count, setCount }}>
         <Navbar />
         <section id="center">
           <div className="hero">

@@ -1,122 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import { useForm } from "react-hook-form";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const {
+    handleSubmit,
+    register,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  const delay = (d) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, d * 1000);
+    });
+  };
+  const onSubmit = async (values) => {
+    await delay(0.3);
+    console.log(values);
+    // if (values.username !== "hamza") {
+    //   setError("myform", {
+    //     type: "manual",
+    //     message: "Username is incorrect",
+    //   });
+    // }
+    // if (values.username === "hamza1") {
+    //   setError("blocked", {
+    //     type: "manual",
+    //     message: "Sorry! this user is Blocked",
+    //   });
+    // }
+  };
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {isSubmitting && <div>loading....</div>}
+      <div className="container">
+        <form action="" onSubmit={handleSubmit(onSubmit)}>
+          <input
+            placeholder="Username"
+            {...register("username", {
+              required: { value: true, message: "Username is required." },
+              minLength: { value: 3, message: "Min length is 3" },
+              maxLength: { value: 8, message: "Max length is 8" },
+            })}
+            type="text"
+            id=""
+          />
+          {errors.username && (
+            <div className="red">{errors.username.message}.</div>
+          )}
+          <input
+            placeholder="Password"
+            {...register("password", {
+              required: { value: true, message: "password is required." },
+              minLength: { value: 5, message: "Min length of password is 5" },
+            })}
+            type="password"
+            id=""
+          />
+          {errors.password && (
+            <div className="red">{errors.password.message}.</div>
+          )}
+          <br />
+          <input disabled={isSubmitting} type="submit" value="submit" />
+          {errors.myform && <div className="red">{errors.myform.message}.</div>}
+          {errors.blocked && (
+            <div className="red">{errors.blocked.message}.</div>
+          )}
+        </form>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

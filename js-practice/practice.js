@@ -26,4 +26,4 @@ var str1 = "this is a string data type";
 
 var str2 = "this is also a string data type";
 
-console.log(num1, num2, str1);
+console.log(num1, num2, str1, str2);

@@ -28,11 +28,11 @@
 // console.log(num1, num2, str1, str2);
 
 function avg(a, b) {
-  c = (a + b) / 2;
+  let c = (a + b) / 2;
   return c;
 }
-c1 = avg(4, 6);
-c2 = avg(4, 6);
+let c1 = avg(4, 6);
+let c2 = avg(4, 6);
 console.log(c1, c2);
 console.log(c1 == c2);
 console.log(c1 === c2);

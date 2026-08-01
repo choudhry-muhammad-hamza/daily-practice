@@ -27,22 +27,45 @@
 // var str2 = "this is also a string data type";
 // console.log(num1, num2, str1, str2);
 
-function avg(a, b) {
-  let c = (a + b) / 2;
-  return c;
-}
-let c1 = avg(4, 6);
-let c2 = avg(4, 6);
-console.log(c1, c2);
-console.log(c1 == c2);
-console.log(c1 === c2);
+// function avg(a, b) {
+//   let c = (a + b) / 2;
+//   return c;
+// }
+// let c1 = avg(4, 6);
+// let c2 = avg(4, 6);
+// console.log(c1, c2);
+// console.log(c1 == c2);
+// console.log(c1 === c2);
 
-console.log(abc);
-var abc = 10;
+// console.log(abc);
+// var abc = 10;
 
-const fruits = ["apple", "banana", "cherry"];
+// const fruits = ["apple", "banana", "cherry"];
 
-for (let index in fruits) {
-  console.log(index);
-  console.log(fruits[index]);
-}
+// for (let index in fruits) {
+//   console.log(index);
+//   console.log(fruits[index]);
+// }
+
+// let myDate = new Date();
+// console.log(myDate);
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+
+let c = document.getElementsByClassName("container");
+console.log(c);
+c[0].style.background = "purple";
+window.addEventListener("scroll", function () {
+  console.log("Scroll kiya!");
+});
+
+const btn = document.getElementById("counterBtn");
+let count = 0;
+btn.addEventListener("click", function () {
+  count++;
+  btn.textContent = `Click Me: ${count}`;
+  console.log("button is clicked.");
+});

@@ -36,3 +36,13 @@ let c2 = avg(4, 6);
 console.log(c1, c2);
 console.log(c1 == c2);
 console.log(c1 === c2);
+
+console.log(abc);
+var abc = 10;
+
+const fruits = ["apple", "banana", "cherry"];
+
+for (let index in fruits) {
+  console.log(index);
+  console.log(fruits[index]);
+}

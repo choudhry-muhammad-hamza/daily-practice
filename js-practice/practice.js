@@ -35,3 +35,4 @@ c1 = avg(4, 6);
 c2 = avg(4, 6);
 console.log(c1, c2);
 console.log(c1 == c2);
+console.log(c1 === c2);

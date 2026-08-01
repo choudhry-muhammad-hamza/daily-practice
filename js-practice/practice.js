@@ -55,17 +55,43 @@
 // console.log(myDate.getMinutes());
 // console.log(myDate.getHours());
 
-let c = document.getElementsByClassName("container");
-console.log(c);
-c[0].style.background = "purple";
-window.addEventListener("scroll", function () {
-  console.log("Scroll kiya!");
-});
+// let c = document.getElementsByClassName("container");
+// console.log(c);
+// c[0].style.background = "purple";
+// window.addEventListener("scroll", function () {
+//   console.log("Scroll kiya!");
+// });
 
-const btn = document.getElementById("counterBtn");
-let count = 0;
-btn.addEventListener("click", function () {
-  count++;
-  btn.textContent = `Click Me: ${count}`;
-  console.log("button is clicked.");
-});
+// const btn = document.getElementById("counterBtn");
+// let count = 0;
+// btn.addEventListener("click", function () {
+//   count++;
+//   btn.textContent = `Click Me: ${count}`;
+//   console.log("button is clicked.");
+// });
+// btn.addEventListener("mouseover", function () {
+//   console.log("you are in the button");
+//   this.style.transform = "scale(0.95)";
+// });
+// btn.addEventListener("mouseout", function () {
+//   console.log("you are out from the button");
+//   this.style.transform = "scale(0.95)";
+// });
+// btn.addEventListener("mousedown", function () {
+//   console.log("mousedown");
+//   this.style.transform = "scale(0.95)";
+// });
+// btn.addEventListener("mouseup", function () {
+//   console.log("mouseup");
+//   this.style.transform = "scale(0.95)";
+// });
+
+setTime = () => {
+  console.log("3 seconds completed");
+  document.querySelectorAll(".container")[0].innerHTML =
+    "<b>completed 3 seconds</b>";
+};
+let t = setTimeout(setTime, 3000);
+let i = setInterval(setTime, 3000);
+clearTimeout(t);
+clearInterval(i);

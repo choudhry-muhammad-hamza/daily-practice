@@ -86,12 +86,32 @@
 //   this.style.transform = "scale(0.95)";
 // });
 
-setTime = () => {
-  console.log("3 seconds completed");
-  document.querySelectorAll(".container")[0].innerHTML =
-    "<b>completed 3 seconds</b>";
-};
-let t = setTimeout(setTime, 3000);
-let i = setInterval(setTime, 3000);
-clearTimeout(t);
-clearInterval(i);
+// setTime = () => {
+//   console.log("3 seconds completed");
+//   document.querySelectorAll(".container")[0].innerHTML =
+//     "<b>completed 3 seconds</b>";
+// };
+// let t = setTimeout(setTime, 3000);
+// let i = setInterval(setTime, 3000);
+// clearTimeout(t);
+// clearInterval(i);
+
+// // javaScript localStorage
+// localStorage.setItem("Name", "Hamza");
+// localStorage;
+// console.log(localStorage.getItem("Name"));
+// console.log(localStorage.getItem("name"));
+// localStorage.removeItem("name");
+// localStorage.clear();
+
+// // json
+// let obj = { name: "Hamza", length: 1, a: { age: "twentyfive" } };
+// // convert object to string
+// console.log(obj, typeof obj);
+// let json = JSON.stringify(obj);
+// console.log(json, typeof json);
+// // convert string to object
+// let parsed = JSON.parse(
+//   `{ "name": "Hamza", "length": 1, "a": { "age": "twentyfive" } }`,
+// );
+// console.log(parsed, typeof parsed);

@@ -7,7 +7,7 @@ const options = {
   year: "numeric",
   month: "long",
   day: "numeric",
-  second: "2-digit",
+  // second: "2-digit",
 };
 setInterval(() => {
   a = new Date();

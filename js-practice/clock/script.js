@@ -1,3 +1,4 @@
+// use of totoLocaleDateString(undefined, options);
 let a;
 let date;
 let time;
@@ -6,7 +7,7 @@ const options = {
   year: "numeric",
   month: "long",
   day: "numeric",
-  // second: "2-digit",
+  second: "2-digit",
 };
 setInterval(() => {
   a = new Date();
@@ -22,3 +23,21 @@ setInterval(() => {
   // a.getMilliseconds();
   document.getElementById("time").innerHTML = time + " on date " + date;
 }, 1000);
+
+// // use of totoLocaleString(undefined, options);
+// const options = {
+//   weekday: "long",
+//   year: "numeric",
+//   month: "long",
+//   day: "numeric",
+//   hour: "2-digit",
+//   minute: "2-digit",
+//   second: "2-digit",
+// };
+// setInterval(() => {
+//   a = new Date();
+//   document.getElementById("time").innerHTML = a.toLocaleString(
+//     undefined,
+//     options,
+//   );
+// }, 1000);

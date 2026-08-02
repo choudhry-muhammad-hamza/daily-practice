@@ -63,6 +63,8 @@
             <input
               class="form-control me-2"
               type="search"
+              id="search"
+              name="search"
               placeholder="Search"
               aria-label="Search"
             />
@@ -75,22 +77,21 @@
     </nav>
 
     <!-- live clock -->
-    <nav class="container my-4">
+    <div class="container my-4">
       <div class="card text-center">
         <div class="card-header">
           <h1>Live Clock</h1>
         </div>
         <div class="card-body">
           <h5 class="card-title">Current Time is : <span id="time"></span></h5>
-          <p class="card-text">
-            This clock shows you the current Time.
-          </p>
+          <p class="card-text">This clock shows you the current Time.</p>
           <a href="#" class="btn btn-primary">Update Time</a>
         </div>
-       
-    </nav>
+      </div>
+    </div>
+
     <!-- javaScript link -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
     <!-- bootstrap link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

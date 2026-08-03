@@ -64,7 +64,7 @@ function render() {
   // recreate each item
   todos.forEach((todo, index) => {
     const node = createTodoNode(todo, index);
-    list.appendChild(node);
+    list.prepend(node);
   });
 }
 

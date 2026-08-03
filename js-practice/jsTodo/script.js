@@ -1,6 +1,6 @@
 // select Dom elements
 const input = document.getElementById("todo-input");
-const addBtn = document.getElementById("todo-btn");
+const addBtn = document.getElementById("add-btn");
 const list = document.getElementById("todo-list");
 
 // try to load saved todos from localstorage (if any)
@@ -12,7 +12,7 @@ function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// create a dom node for a todo object and append it to the list
+// create a DOM node for a todo object and append it to the list
 function createTodoNode(todo, index) {
   const li = document.createElement("li");
 
@@ -24,6 +24,7 @@ function createTodoNode(todo, index) {
     todo.completed = checkbox.checked;
 
     // visual feedback: strike-through when completed
+    textSpan.style.textDecoration = todo.completed ? "line-through" : "";
     saveTodos();
   });
   // text of todo
@@ -32,27 +33,28 @@ function createTodoNode(todo, index) {
   textSpan.style.margin = "0 8px";
   if (todo.completed) {
     textSpan.style.textDecoration = "line-through";
-
-    // add double-click eventlistener
-    textSpan.addEventListener("dblclick", () => {
-      const newText = prompt("edit todo", todo.text);
-      if (newText !== null) {
-        todo.text = newText.trim();
-        textSpan.textContent = todo.text;
-        saveTodos();
-      }
-    });
-    // delete todo button
-    const delBtn = document.createElement("button");
-    delBtn.textContent = "Delete";
-    delBtn.addEventListener("click", () => {
-      todos.splice(index, 1);
-      render();
-      saveTodos();
-    });
-    li.appendChild(checkbox);
-    li.appendChild();
   }
+  // add double-click eventlistener
+  textSpan.addEventListener("dblclick", () => {
+    const newText = prompt("edit todo", todo.text);
+    if (newText !== null) {
+      todo.text = newText.trim();
+      textSpan.textContent = todo.text;
+      saveTodos();
+    }
+  });
+  // delete todo button
+  const delBtn = document.createElement("button");
+  delBtn.textContent = "Delete";
+  delBtn.addEventListener("click", () => {
+    todos.splice(index, 1);
+    render();
+    saveTodos();
+  });
+  li.appendChild(checkbox);
+  li.appendChild(textSpan);
+  li.appendChild(delBtn);
+  return li;
 }
 
 // render the whole todo list from todos array
@@ -65,3 +67,25 @@ function render() {
     list.appendChild(node);
   });
 }
+
+function addTodo() {
+  const text = input.value.trim();
+  if (!text) {
+    return;
+  }
+
+  // push a new todo object
+  todos.push({ text: text, completed: false });
+  input.value = "";
+  render();
+  saveTodos();
+}
+
+addBtn.addEventListener("click", addTodo);
+// press enter to make todo item
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    addTodo();
+  }
+});
+render();

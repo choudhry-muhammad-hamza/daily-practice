@@ -1024,7 +1024,7 @@ function getData(dataId, getNextData) {
     }, 500);
   });
 }
-let result = getData(123);
+// let result = getData(123);
 console.log(result);
 const getPromise = () => {
   return new Promise((resolve, reject) => {

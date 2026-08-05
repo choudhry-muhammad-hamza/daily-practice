@@ -827,8 +827,9 @@
 //   },
 // };
 // karan.__proto__ = employee;
+// console.log(employee);
 
-// classes
+// // classes
 // class Car {
 //   constructor(brand, mileage) {
 //     console.log("creating new object");
@@ -837,6 +838,7 @@
 //   }
 //   start() {
 //     console.log("start");
+//     return "hy";
 //   }
 //   stop() {
 //     console.log("stop");
@@ -850,7 +852,7 @@
 // // inheritance
 // class Parent {
 //   hello() {
-//     console.log("hello");
+//     console.log("hello hamza!");
 //   }
 // }
 // class Child extends Parent {}
@@ -877,6 +879,7 @@
 //   }
 // }
 // let hamza = new Engineer();
+// let Hamza = new Doctor();
 
 // // super keyword
 // class Person {
@@ -901,6 +904,7 @@
 //   }
 // }
 // let hamza = new Engineer("software engineer");
+
 // class Person {
 //   constructor(name) {
 //     this.species = "homo sapiens";
@@ -990,17 +994,18 @@
 // // callback hell
 // function getData(dataId, getNextData) {
 //   setTimeout(() => {
+//     console.log("getting data 1 ...");
 //     console.log("data = ", dataId);
 //     if (getNextData) {
 //       getNextData();
 //     }
-//   }, 500);
+//   }, 1500);
 // }
 // getData(1, () => {
 //   console.log("getting data 2 ...");
 //   getData(2, () => {
 //     console.log("getting data 3 ...");
-//     getData(3, () => {
+//     getData(3, () => {d
 //       console.log("getting data 4 ...");
 //       getData(4);
 //     });
@@ -1008,34 +1013,34 @@
 // });
 
 // promises
-// function getData(dataId, getNextData) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("data = ", dataId);
-//       resolve("success");
-//       if (getNextData) {
-//         getNextData();
-//       }
-//     }, 500);
-//   });
-// }
-// let result = getData(123);
-// console.log(result);
-// const getPromise = () => {
-//   return new Promise((resolve, reject) => {
-//     console.log("i am a promise.");
-//     resolve("mission successful");
-//     reject("rejected due to error");
-//   });
-// };
-// let promise = getPromise();
-// promise
-//   .then((res) => {
-//     console.log("promise fulfilled.", res);
-//   })
-//   .catch((err) => {
-//     console.log("rejected", err);
-//   });
+function getData(dataId, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data = ", dataId);
+      resolve("success");
+      if (getNextData) {
+        getNextData();
+      }
+    }, 500);
+  });
+}
+let result = getData(123);
+console.log(result);
+const getPromise = () => {
+  return new Promise((resolve, reject) => {
+    console.log("i am a promise.");
+    resolve("mission successful");
+    reject("rejected due to error");
+  });
+};
+let promise = getPromise();
+promise
+  .then((res) => {
+    console.log("promise fulfilled.", res);
+  })
+  .catch((err) => {
+    console.log("rejected", err);
+  });
 
 // // promise chain
 // function asyncFun1(params) {

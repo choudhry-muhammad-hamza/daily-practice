@@ -1012,7 +1012,7 @@
 //   });
 // });
 
-//// promises
+// promises
 function getData(dataId, getNextData) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {

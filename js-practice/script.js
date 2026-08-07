@@ -991,26 +991,26 @@
 // }
 // calculator(3, 7, sum);
 
-// callback hell
-function getData(dataId, getNextData) {
-  setTimeout(() => {
-    console.log("getting data 1 ...");
-    console.log("data = ", dataId);
-    if (getNextData) {
-      getNextData();
-    }
-  }, 1500);
-}
-getData(1, () => {
-  console.log("getting data 2 ...");
-  getData(2, () => {
-    console.log("getting data 3 ...");
-    getData(3, () => {
-      console.log("getting data 4 ...");
-      getData(4);
-    });
-  });
-});
+// // callback hell
+// function getData(dataId, getNextData) {
+//   setTimeout(() => {
+//     console.log("getting data 1 ...");
+//     console.log("data = ", dataId);
+//     if (getNextData) {
+//       getNextData();
+//     }
+//   }, 1500);
+// }
+// getData(1, () => {
+//   console.log("getting data 2 ...");
+//   getData(2, () => {
+//     console.log("getting data 3 ...");
+//     getData(3, () => {
+//       console.log("getting data 4 ...");
+//       getData(4);
+//     });
+//   });
+// });
 
 // promises
 function getData(dataId, getNextData) {

@@ -950,21 +950,31 @@
 // let admin1 = new Admin("admin", "admin@gmail.com");
 
 // // error handling (try-catch)
-// let a = 10;
-// let b = 5;
+// let a = prompt("enter first number");
+// let b = prompt("enter second number");
 // console.log("a=", a);
 // console.log("b=", b);
-// console.log("a+b=", a + b);
-// try {
-//   console.log("a+b=", a + c);
-// } catch (error) {
-//   console.log(error);
+// if (isNaN(a) || isNaN(b)) {
+//   throw new Error("the value you entered is not a number");
 // }
-// console.log("a+b=", a + b);
-// console.log("a+b=", a + b);
-// console.log("a+b=", a + b);
-// console.log("a+b=", a + b);
-// console.log("a+b=", a + b);
+// let sum = +a + +b;
+// function rain() {
+//   try {
+//     console.log("a+b=", a + c);
+//   } catch (error) {
+//     console.log(error);
+//     console.log(error.name);
+//     console.log(error.message);
+//     console.log(error.stack);
+//     console.log("it is raining.");
+//     return "heavy raining";
+//   } finally {
+//     // finally ka main use function me hota ha function me return k bad code run ni hota but agr function k andar finally use kiya ho to wo return k bad bhi run ho ga agr is function me finally na lgaya hota ha ye run hi na hota
+//     console.log("ye finally wala part always run ho ga error aaye ya na aaye ");
+//   }
+// }
+// rain();
+// console.log("a+b=", sum);
 
 // // setTimeOut
 // console.log("one");

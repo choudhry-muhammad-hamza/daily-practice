@@ -38,8 +38,8 @@ function App() {
         value={form.email ? form.email : ""}
         onChange={handleChange}
       />{" "}
-      {/* <br />
-      <br /> */}
+      <br />
+      {/* <br /> */}
       <input
         type="text"
         name="phone"

@@ -39,7 +39,7 @@ function App() {
         onChange={handleChange}
       />{" "}
       <br />
-      {/* <br /> */}
+      <br />
       <input
         type="text"
         name="phone"

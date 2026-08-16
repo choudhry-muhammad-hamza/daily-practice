@@ -16,7 +16,6 @@ function App() {
   //   "Mango",
   //   "Peach",
   //   "Guava",
-  //   "Lechi",
   //   "Pineapple",
   // ];
 

@@ -36,15 +36,15 @@ function App() {
         </>
       ),
     },
-    {
-      path: "/contact",
-      element: (
-        <>
-          <Navbar />
-          <Contact />
-        </>
-      ),
-    },
+    // {
+    //   path: "/contact",
+    //   element: (
+    //     <>
+    //       <Navbar />
+    //       <Contact />
+    //     </>
+    //   ),
+    // },
     {
       path: "/user/:username",
       element: (

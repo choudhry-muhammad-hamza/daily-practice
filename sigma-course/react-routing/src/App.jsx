@@ -18,15 +18,15 @@ function App() {
         </>
       ),
     },
-    {
-      path: "/login",
-      element: (
-        <>
-          <Navbar />
-          <Login />
-        </>
-      ),
-    },
+    // {
+    //   path: "/login",
+    //   element: (
+    //     <>
+    //       <Navbar />
+    //       <Login />
+    //     </>
+    //   ),
+    // },
     {
       path: "/about",
       element: (

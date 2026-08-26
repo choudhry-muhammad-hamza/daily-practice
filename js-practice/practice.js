@@ -126,7 +126,7 @@ document.getElementById("parent").addEventListener("click", function (event) {
 });
 
 document.getElementById("child").addEventListener("click", function (event) {
-  event.stopPropagation(); // ab ye event upar bubble nahi karega
+  event.stopPropagation();
   console.log("Child (button) clicked!");
 });
 

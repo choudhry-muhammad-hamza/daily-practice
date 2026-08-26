@@ -116,21 +116,15 @@
 // );
 // console.log(parsed, typeof parsed);
 
+// Event Bubbling and stopping propagation
 document.getElementById("grandparent").addEventListener("click", function () {
   console.log("Grandparent clicked!");
 });
-
 document.getElementById("parent").addEventListener("click", function (event) {
   event.stopPropagation();
   console.log("Parent clicked!");
 });
-
 document.getElementById("child").addEventListener("click", function (event) {
   event.stopPropagation();
-  console.log("Child (button) clicked!");
+  console.log("Child clicked!");
 });
-
-// document.getElementById("child").addEventListener("click", function (event) {
-//   event.stopPropagation(); // ab ye event upar bubble nahi karega
-//   console.log("Sirf child clicked!");
-// });

@@ -116,7 +116,7 @@
 // );
 // console.log(parsed, typeof parsed);
 
-Event Bubbling and stopping propagation
+// Event Bubbling and stopping propagation
 document.getElementById("grandparent").addEventListener("click", function () {
   console.log("Grandparent clicked!");
 });

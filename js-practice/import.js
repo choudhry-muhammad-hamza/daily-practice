@@ -16,9 +16,9 @@
 // let add = ad(2, 3, 4);
 // console.log(add);
 
-// // all files import
-// import * as exp from "./export.js";
-// let multiply = exp.mul(2, 3, 4);
-// console.log(multiply);
-// let add = exp.ad(2, 3, 4);
-// console.log(add);
+// all files import
+import * as exp from "./export.js";
+let multiply = exp.mul(2, 3, 4);
+console.log(multiply);
+let add = exp.ad(2, 3, 4);
+console.log(add);
